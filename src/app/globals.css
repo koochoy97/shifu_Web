@@ -6,6 +6,7 @@
   html {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
   }
 
   body {
@@ -14,6 +15,9 @@
     line-height: 1.5;
     font-feature-settings: "ss01", "cv11";
     position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
   }
 
   /* Paper grain texture — kills the "flat AI" feel */

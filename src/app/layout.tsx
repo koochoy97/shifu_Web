@@ -20,6 +20,7 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shi-food.com"),
   title: `${brand.name} · ${brand.tagline}`,
   description: brand.heroSub,
   icons: {
@@ -32,6 +33,23 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
+    type: "website",
+    locale: "es_PE",
+    url: "https://shi-food.com",
+    siteName: brand.name,
+    title: `${brand.name} · ${brand.tagline}`,
+    description: brand.heroSub,
+    images: [
+      {
+        url: "/images/wontons-hero.jpeg",
+        width: 768,
+        height: 1376,
+        alt: `${brand.name} · ${brand.tagline}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
     title: `${brand.name} · ${brand.tagline}`,
     description: brand.heroSub,
     images: ["/images/wontons-hero.jpeg"],
