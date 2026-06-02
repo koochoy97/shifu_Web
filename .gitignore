@@ -6,6 +6,8 @@ out
 *.log
 .vercel
 next-env.d.ts
+*.tsbuildinfo
 
 # Working files locales, no se suben al repo
 Fotos de referencia/
+.claude/
