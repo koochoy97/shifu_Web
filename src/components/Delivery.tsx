@@ -7,7 +7,7 @@ export default function Delivery() {
   return (
     <section
       onClick={() => sendEvent("section_click", { section: "delivery" })}
-      className="rounded-card bg-paper-light p-5 shadow-card"
+      className="rounded-2xl bg-paper-light p-5 shadow-card"
     >
       <p className="eyebrow text-ink-mute">{delivery.heading}</p>
       <h2 className="title-md mt-2 text-ink">{delivery.title}</h2>

@@ -2,7 +2,7 @@ import { faq } from "@/content/menu";
 
 export default function Faq() {
   return (
-    <section className="rounded-card bg-paper-light p-5 shadow-card">
+    <section className="rounded-2xl bg-paper-light p-5 shadow-card">
       <p className="eyebrow text-ink-mute">Preguntas frecuentes</p>
       <h2 className="title-md mt-2 text-ink">Resolvemos dudas</h2>
       <div className="mt-5 divide-y divide-ink/10 rounded-2xl bg-paper">

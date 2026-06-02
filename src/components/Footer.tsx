@@ -3,7 +3,7 @@ import { brand, contact } from "@/content/menu";
 
 export default function Footer() {
   return (
-    <footer className="rounded-card bg-paper-light p-6 text-center">
+    <footer className="rounded-xl bg-paper-light p-6 text-center">
       <Image
         src="/shifu-logo-green.png"
         alt="SHIFU"

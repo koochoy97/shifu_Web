@@ -1,13 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Inter_Tight } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import TrackingProvider from "@/components/TrackingProvider";
 import ContactBar from "@/components/ContactBar";
 import { brand } from "@/content/menu";
 
-const display = Inter_Tight({
+const display = Fraunces({
   subsets: ["latin"],
   weight: ["600", "700", "800", "900"],
+  style: ["normal", "italic"],
   variable: "--font-display",
   display: "swap",
 });

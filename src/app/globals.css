@@ -13,37 +13,67 @@
     font-size: 16px;
     line-height: 1.5;
     font-feature-settings: "ss01", "cv11";
+    position: relative;
+  }
+
+  /* Paper grain texture — kills the "flat AI" feel */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.12  0 0 0 0 0.08  0 0 0 0 0.06  0 0 0 0.42 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  /* Children content sits above the grain */
+  body > * {
+    position: relative;
+    z-index: 2;
   }
 
   h1,
   h2,
   h3 {
-    @apply font-display font-bold tracking-tight;
-    letter-spacing: -0.03em;
-    line-height: 1;
+    @apply font-display;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+    font-feature-settings: "ss01";
   }
 }
 
 @layer utilities {
   .title-xl {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 900;
     font-size: clamp(2.5rem, 11vw, 4.5rem);
-    line-height: 0.95;
-    letter-spacing: -0.04em;
-    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.025em;
   }
 
   .title-lg {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 900;
     font-size: clamp(2rem, 8vw, 3.25rem);
-    line-height: 1;
-    letter-spacing: -0.035em;
-    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.022em;
   }
 
   .title-md {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 800;
     font-size: clamp(1.5rem, 6vw, 2rem);
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .italic-accent {
+    font-style: italic;
+    font-weight: 500;
+    font-family: var(--font-display), Georgia, serif;
   }
 
   .eyebrow {
@@ -57,6 +87,29 @@
 
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Decorative 福 watermark — used absolutely positioned inside sections */
+  .fu-watermark {
+    font-family: var(--font-display), serif;
+    color: rgba(165, 40, 40, 0.08);
+    font-weight: 900;
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+  }
+
+  /* Chinese chop sticker pinned on cards */
+  .fu-stamp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #c43838 0%, #8a1d1d 70%);
+    color: #f6efc6;
+    font-family: var(--font-display), serif;
+    font-weight: 700;
+    border: 2px solid #f6efc6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   }
 
   .reveal {

@@ -8,9 +8,9 @@ export const brand = {
     "Wontons tradicionales hechos a mano. Hierves agua y en 7 minutos los tienes listos.",
   // Tres atributos cortos que reemplazan el "+1,200 pedidos" del hero.
   heroBadges: [
-    { icon: "🥟", label: "100% cerdo" },
-    { icon: "❄️", label: "Congelados crudos" },
-    { icon: "⏱️", label: "Listos en 10 min" },
+    { num: "01", label: "100% cerdo" },
+    { num: "02", label: "Congelados crudos" },
+    { num: "03", label: "Listos en 10 min" },
   ],
 };
 

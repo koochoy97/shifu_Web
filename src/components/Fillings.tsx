@@ -8,9 +8,16 @@ export default function Fillings() {
   return (
     <section
       onClick={() => sendEvent("section_click", { section: "filling" })}
-      className="overflow-hidden rounded-card bg-paper-light shadow-card"
+      className="relative overflow-visible rounded-[20px] bg-paper-light shadow-card"
     >
-      <div className="relative aspect-[4/3] w-full">
+      <span
+        aria-hidden="true"
+        className="fu-stamp absolute -right-3 -top-3 z-10 h-14 w-14 rounded-full text-xl"
+        style={{ transform: "rotate(14deg)" }}
+      >
+        福
+      </span>
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-[20px]">
         <Image
           src={filling.image}
           alt={filling.imageAlt}
