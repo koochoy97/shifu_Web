@@ -11,14 +11,14 @@ export default function Hero() {
       onClick={() => sendEvent("section_click", { section: "hero" })}
       className="relative overflow-hidden rounded-card bg-wood text-cream shadow-card-lg"
     >
-      <div className="relative aspect-[3/4] w-full">
+      <div className="relative aspect-[3/4] w-full overflow-hidden">
         <Image
           src={hero.src}
           alt={hero.alt}
           fill
           priority
           sizes="(min-width: 768px) 576px, 100vw"
-          className="object-cover"
+          className="object-cover animate-ken-burns"
         />
         <div
           className="absolute inset-0"
