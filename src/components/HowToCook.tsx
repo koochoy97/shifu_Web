@@ -3,7 +3,7 @@ import { howToCook } from "@/content/menu";
 export default function HowToCook() {
   return (
     <section className="rounded-card bg-ink p-5 text-paper shadow-card">
-      <p className="eyebrow text-paper/60">7 minutos</p>
+      <p className="eyebrow text-paper/60">{howToCook.eyebrow}</p>
       <h2 className="title-md mt-2 text-paper">{howToCook.heading}</h2>
       <p className="mt-2 text-sm text-paper/70">{howToCook.subtitle}</p>
       <ol className="mt-5 space-y-3">

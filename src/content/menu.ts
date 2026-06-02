@@ -10,7 +10,7 @@ export const brand = {
   heroBadges: [
     { icon: "🥟", label: "100% cerdo" },
     { icon: "❄️", label: "Congelados crudos" },
-    { icon: "⏱️", label: "Listos en 7 min" },
+    { icon: "⏱️", label: "Listos en 10 min" },
   ],
 };
 
@@ -79,13 +79,14 @@ export const included = [
 ];
 
 export const howToCook = {
+  eyebrow: "10 minutos",
   heading: "Cómo se preparan",
   subtitle: "Es muy fácil. En serio.",
   steps: [
     {
       step: 1,
       title: "Hierves agua",
-      detail: "Una olla con bastante agua. Le echas una pizca de sal.",
+      detail: "Una olla con bastante agua.",
     },
     {
       step: 2,
@@ -95,7 +96,7 @@ export const howToCook = {
     {
       step: 3,
       title: "Listos cuando floten",
-      detail: "Como 7 minutos. Cuando suben a la superficie, ya están.",
+      detail: "Como 10 minutos. Cuando suben y ves el agua burbujear otra vez, ya están.",
     },
   ],
 };
@@ -114,7 +115,7 @@ export const faq = [
   },
   {
     q: "¿Cómo se preparan?",
-    a: "Hierves agua, echas los wontons congelados (no descongelar), y los sacas cuando floten. Como 7 minutos. Eso es todo.",
+    a: "Hierves agua, echas los wontons congelados (no descongelar), y los sacas cuando floten y veas el agua burbujear otra vez. Como 10 minutos. Eso es todo.",
   },
 ];
 
